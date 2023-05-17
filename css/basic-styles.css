@@ -1,0 +1,141 @@
+:root {
+	--link-color: rgb(253, 147, 204);
+	--link-hover-color: rgb(255, 92, 141);
+	--highlight-color: rgb(66, 212, 85);
+}
+
+* {
+	font-family: "Amatic SC", sans-serif;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 0.7px;
+}
+
+body {
+	background-image: url(../assets/images/4054966-pink-sfocato-scuro.png);
+	background-size: cover;
+	background-attachment: fixed;
+	overflow-x: hidden;
+}
+
+footer * {
+	overflow-x: hidden;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight:normal;
+	font-variant: small-caps;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+a, .nav-link, .nav-link:not(:active), .nav-link:active {
+	color: var(--link-color);
+}
+
+.nav-pills .nav-item .active {
+	background-color: unset;
+	border-bottom: solid 2px deeppink;
+	border-radius: 0;
+}
+
+#contatti a:hover, footer a:hover {
+	color: var(--link-hover-color);
+	border-bottom: solid 1px var(--link-hover-color);
+}
+
+#hard-skills li:hover {
+	transform: scale(1.2);
+}
+#hard-skills li:not(hover) {
+	transition: 0.5s;
+}
+
+.navbar li:hover {
+	transform: scale(1.1);
+}
+.navbar li:not(hover) {
+	transition: 0.5s;
+}
+@media only screen and (max-width: 767px) {
+	.navbar li:hover {
+		transform: none;
+	}
+	.navbar li:not(hover) {
+		transition: none;
+	}
+	.nav-pills .nav-item .active {
+		background-color: unset;
+		border-bottom: none;
+		border-radius: 0;
+	}
+}
+
+/* .propic {
+	width: 10vw;
+	height: 10vw;
+	max-width: 220px;
+	max-height: 220px;
+	min-width: 150px;
+	min-height: 150px;
+	background-image: url("../assets/Fototessera\ 2021.jpg");
+	background-size: cover;
+	display: block;
+	border-radius: 50%;
+} */
+.propic {
+	width: 10vw;
+	height: 10vw;
+	max-width: 220px;
+	max-height: 280px;
+	min-width: 150px;
+	min-height: 200px;
+	background-image: url("../assets/Fototessera\ 2021.jpg");
+	background-size: cover;
+	display: block;
+	border-radius: 6%;
+}
+
+.spacing {
+	height: 250px;
+}
+
+.width-fit-content {
+	width: fit-content;
+}
+
+.main-color-background {
+	background-color: rgb(26, 26, 26);
+}
+
+.no-border {
+	border: none;
+}
+
+.bg-purple {
+	background-color: deeppink;
+}
+
+.bg-limegreen {
+	background-color: limegreen;
+}
+
+.bg-tomato {
+	background-color: tomato;
+}
+
+.bg-mediumslateblue {
+	background-color: mediumslateblue;
+}
+
+.bg-transparent-layer {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+.text-contrast {
+	color: var(--highlight-color);
+}
+
+.text-shadow {
+	text-shadow: 3px 3px 5px deeppink;
+}
