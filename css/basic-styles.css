@@ -71,30 +71,30 @@ a, .nav-link, .nav-link:not(:active), .nav-link:active {
 	}
 }
 
-/* .propic {
-	width: 10vw;
-	height: 10vw;
-	max-width: 220px;
-	max-height: 220px;
+.propic {
+	width: 22vw;
+	height: 22vw;
+	max-width: 320px;
+	max-height: 320px;
 	min-width: 150px;
 	min-height: 150px;
-	background-image: url("../assets/Fototessera\ 2021.jpg");
+	background-image: url("../assets/Fototessera.jpg");
 	background-size: cover;
 	display: block;
 	border-radius: 50%;
-} */
-.propic {
+}
+/* .propic {
 	width: 10vw;
 	height: 10vw;
 	max-width: 220px;
 	max-height: 280px;
 	min-width: 150px;
 	min-height: 200px;
-	background-image: url("../assets/Fototessera\ 2021.jpg");
+	background-image: url("../assets/Fototessera.jpg");
 	background-size: cover;
 	display: block;
 	border-radius: 6%;
-}
+} */
 
 .spacing {
 	height: 250px;
