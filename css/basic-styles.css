@@ -158,3 +158,20 @@ a, .nav-link, .nav-link:not(:active), .nav-link:active {
 .d-inline {
 	font-size: 1em;
 }
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+::-webkit-scrollbar-track {
+	background: #141313;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #555;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: deeppink;
+}
