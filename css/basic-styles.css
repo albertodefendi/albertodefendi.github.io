@@ -6,6 +6,8 @@
 
 * {
 	font-family: "Amatic SC", sans-serif;
+	/* font-family: "Ubuntu Mono", monospace; */
+	/* font-size: 14px; */
 	color: white;
 	font-weight: bold;
 	letter-spacing: 0.7px;
@@ -27,6 +29,10 @@ footer * {
 
 h1 {
 	font-size: 48px;
+}
+
+a {
+	font-size: 1em;
 }
 
 a, .nav-link, .nav-link:not(:active), .nav-link:active {
@@ -120,6 +126,14 @@ a, .nav-link, .nav-link:not(:active), .nav-link:active {
 	background-color: limegreen;
 }
 
+.bg- {
+	background-color:rgb(137, 50, 199)
+}
+
+.bg-gold {
+	background-color: rgb(253, 222, 44)
+}
+
 .bg-tomato {
 	background-color: tomato;
 }
@@ -138,4 +152,8 @@ a, .nav-link, .nav-link:not(:active), .nav-link:active {
 
 .text-shadow {
 	text-shadow: 3px 3px 5px deeppink;
+}
+
+.d-inline {
+	font-size: 1em;
 }
