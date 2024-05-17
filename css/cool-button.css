@@ -1,4 +1,4 @@
-.download-button button {
+.cool-button button {
 	border: none;
 	padding: 5px 25px;
 	font-size: 16px;
@@ -16,20 +16,20 @@
 	line-height: 17px;
 }
 
-.download-button button a {
+.cool-button button a {
 	text-decoration: none;
 }
 
-.download-button button:hover {
+.cool-button button:hover {
 	color: #000;
 }
 
-.download-button span {
+.cool-button span {
 	transition: all 0.7s;
 	z-index: -1;
 }
 
-.download-button button .first {
+.cool-button button .first {
 	content: "";
 	position: absolute;
 	right: 100%;
@@ -39,11 +39,11 @@
 	background: #ffa500;
 }
 
-.download-button button:hover .first {
+.cool-button button:hover .first {
 	top: 0;
 	right: 0;
 }
-.download-button button .second {
+.cool-button button .second {
 	content: "";
 	position: absolute;
 	left: 25%;
@@ -53,12 +53,12 @@
 	background: #ffa500;
 }
 
-.download-button button:hover .second {
+.cool-button button:hover .second {
 	top: 0;
 	left: 50%;
 }
 
-.download-button button .third {
+.cool-button button .third {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -68,12 +68,12 @@
 	background: #ffa500;
 }
 
-.download-button button:hover .third {
+.cool-button button:hover .third {
 	top: 0;
 	left: 25%;
 }
 
-.download-button button .fourth {
+.cool-button button .fourth {
 	content: "";
 	position: absolute;
 	left: 100%;
@@ -83,13 +83,13 @@
 	background: #ffa500;
 }
 
-.download-button button:hover .fourth {
+.cool-button button:hover .fourth {
 	top: 0;
 	left: 0;
 }
 
 @media only screen and (max-width: 991px) {
-	.download-button button {
+	.cool-button button {
 		background-color: #ffa500;
 		color: #000;
 		max-width: 200px;

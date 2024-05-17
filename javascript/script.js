@@ -1,7 +1,12 @@
 // Hamburger menu switch
-function switchHamburger(x) {
+function switchHamburger(x) 
+{
     x.classList.toggle("change");
 }
-function switchHamburger() {
+
+
+
+function switchHamburger() 
+{
     document.getElementById("hamburger").classList.toggle("change");
 }

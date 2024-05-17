@@ -2,6 +2,8 @@
 	--link-color: rgb(253, 147, 204);
 	--link-hover-color: rgb(255, 92, 141);
 	--highlight-color: rgb(66, 212, 85);
+	--hover-highlight-color: rgb(0, 255, 34);
+	--dark-color: rgb(39, 39, 39);
 }
 
 * {
@@ -30,6 +32,80 @@ footer * {
 
 h1 {
 	font-size: 48px;
+}
+
+form {
+	width: 75% !important;
+}
+
+label {
+	font-size: 14px;
+	background-color: transparent !important;
+}
+
+form>*>input, form>*>label, form>*>textarea{
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+}
+
+input, textarea {
+	color: white !important;
+	border-radius: 20px !important;
+	margin: 15px 0;
+	background-color: transparent !important;
+	backdrop-filter: blur(10px);
+	border: solid 2px var(--dark-color) !important;
+}
+
+textarea {
+	min-height: 150px !important;
+}
+
+button {
+	font-size: 20px;
+	width: 100%;
+	border-radius: 20px;
+}
+
+#send-button-container {
+	width: 49.5%;
+}
+
+#delete-button-container {
+	width: 49.5%;
+}
+
+#send-button, #delete-button {
+	border: solid 2px var(--dark-color)
+}
+#send-button:hover, #delete-button:hover {
+	transform: translateY(-5px);
+	transition-duration: 200ms;
+	font-size: 22px;;
+}
+
+#send-button {
+	background-color: var(--highlight-color);
+	color: black;
+}
+#send-button:hover {
+	background-color: var(--hover-highlight-color);
+}
+
+#delete-button {
+	background-color: white;
+	color: rgb(255, 48, 48);
+}
+#delete-button:hover {
+	background-color: rgb(255, 48, 48);
+	color: white;
+}
+#send-button:not(:hover), #delete-button:not(:hover) {
+	transition-duration: 200ms;
+}
+
+footer {
+	backdrop-filter: blur(10px);
 }
 
 a {
@@ -111,6 +187,10 @@ a, .nav-link, .nav-link:not(:active), .nav-link:active {
 	width: fit-content;
 }
 
+.progress-bar {
+	color: transparent;
+}
+
 .main-color-background {
 	background-color: rgb(26, 26, 26);
 }
@@ -141,10 +221,6 @@ a, .nav-link, .nav-link:not(:active), .nav-link:active {
 
 .bg-mediumslateblue {
 	background-color: mediumslateblue;
-}
-
-.bg-transparent-layer {
-	background-color: rgba(0, 0, 0, 0.85);
 }
 
 .text-contrast {
