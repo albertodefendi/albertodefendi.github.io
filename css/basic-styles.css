@@ -71,14 +71,14 @@ button {
 	width: 49.5%;
 }
 
-#delete-button-container {
+#reset-button-container {
 	width: 49.5%;
 }
 
-#send-button, #delete-button {
+#send-button, #reset-button {
 	border: solid 2px var(--dark-color)
 }
-#send-button:hover, #delete-button:hover {
+#send-button:hover, #reset-button:hover {
 	transform: translateY(-5px);
 	transition-duration: 200ms;
 	font-size: 22px;;
@@ -92,15 +92,15 @@ button {
 	background-color: var(--hover-highlight-color);
 }
 
-#delete-button {
+#reset-button {
 	background-color: white;
 	color: rgb(255, 48, 48);
 }
-#delete-button:hover {
+#reset-button:hover {
 	background-color: rgb(255, 48, 48);
 	color: white;
 }
-#send-button:not(:hover), #delete-button:not(:hover) {
+#send-button:not(:hover), #reset-button:not(:hover) {
 	transition-duration: 200ms;
 }
 
