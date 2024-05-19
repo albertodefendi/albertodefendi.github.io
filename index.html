@@ -256,46 +256,40 @@
         <div class="row my-5">
             <div class="col-lg-7 text-center mx-auto" id="contatti">
                 <h1 class="fw-bold text-shadow mb-4">Contattami</h1>
-                <form action="https://formspree.io/f/mzbnwnne" method="POST" class="mx-auto" id="email-form">
+                <form action="https://formspree.io/f/mzbnwnne" method="POST" class="mx-auto" id="contact-form">
                     <div class="form-floating">
-                        <input class="form-control" type="email" id="sender" placeholder="E-mail" name="email">
+                        <input class="form-control" type="email" id="sender" placeholder="E-mail" name="E-mail" required>
                         <label for="sender">E-mail</label>
                     </div>
                     <div class="form-floating">
-                        <input class="form-control" type="text" id="oggetto_mail" placeholder="Oggetto" name="oggetto">
+                        <input class="form-control" type="text" id="oggetto_mail" placeholder="Oggetto" name="Oggetto" required>
                         <label for="oggetto_mail">Oggetto</label>
                     </div>
                     <div class="form-floating">
                         <textarea class="form-control" id="message"
-                            placeholder="Lascia qui il tuo messaggio" name="messaggio"></textarea>
+                            placeholder="Lascia qui il tuo messaggio" name="Messaggio" required></textarea>
                         <label for="message">Lascia qui il tuo messaggio</label>
                     </div>
                     <div class="d-inline-block" id="send-button-container">
-                        <button type="button" id="send-button">INVIA</button>
+                        <button type="submit" id="send-button">INVIA</button>
                     </div>
                     <div class="d-inline-block" id="reset-button-container">
                         <button type="button" id="reset-button">CANCELLA</button>
                     </div>
+                    <div class="my-3" id="status-form"></div>
                 </form>
-                <!-- <div class="col-lg-7 text-center mx-auto" id="link">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-transparent text-white fs-4 my-1 no-border">
-                            <p>
-                                *&nbsp;Qua mi sarebbe piaciuto mettere dei bellissimi link alla mail e al numero di
-                                telefono,
-                                ma
-                                per questioni di sicurezza ovviamente non posso farlo. <br>Però potete sempre
-                                contattarmi
-                                tramite messaggio su LinkedIn&nbsp;*
-                            </p>
-                        </li>
-                        <li class="list-group-item bg-transparent text-white fs-4 my-1 no-border">
-                            <img src="assets/icons/linkedin-white.svg" width="36">
-                            <a href="https://www.linkedin.com/in/alberto-defendi-6288b5270/"
-                                class="text-decoration-none" target="_blank">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div> -->
+                <div class="col-lg-7 text-center mx-auto my-5" id="link">
+                    <p class="fs-4" id="linkedin">
+                        In alternativa potete anche raggiungermi tramite
+                        messaggio al mio profilo <a href="https://www.linkedin.com/in/alberto-defendi-6288b5270/"
+                            class="text-decoration-none" target="_blank">LinkedIn</a>
+                    </p>
+                    <!-- <p class="list-group-item bg-transparent text-white fs-4 my-1 no-border">
+                        <img src="assets/icons/linkedin-white.svg" width="36">
+                        <a href="https://www.linkedin.com/in/alberto-defendi-6288b5270/" class="text-decoration-none"
+                            target="_blank">LinkedIn</a>
+                    </p> -->
+                </div>
             </div>
         </div>
 

@@ -44,7 +44,7 @@ label, label::after {
 	color: white !important;
 }
 
-form>*>input, form>*>label, form>*>textarea{
+form>*>input, form>*>label, form>*>textarea, #status-form {
 	font-family: Montserrat, sans-serif;
 	font-weight: 400;
 }
@@ -99,6 +99,10 @@ button {
 }
 #send-button:not(:hover), #reset-button:not(:hover) {
 	transition-duration: 200ms;
+}
+
+#status-form {
+	font-size: 12px;
 }
 
 footer {
