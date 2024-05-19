@@ -256,33 +256,31 @@
         <div class="row my-5">
             <div class="col-lg-7 text-center mx-auto" id="contatti">
                 <h1 class="fw-bold text-shadow mb-4">Contattami</h1>
-                    <form action="https://formspree.io/f/mzbnwnne" method="POST" class="mx-auto" id="email-form">
-                        <div class="form-floating">
-                            <input class="form-control" type="email" id="sender" placeholder="E-mail" name="email" disabled>
-                            <label for="sender">E-mail</label>
-                        </div>
-                        <div class="form-floating">
-                            <input class="form-control" type="text" id="oggetto_mail" placeholder="Oggetto" name="oggetto"
-                                disabled>
-                            <label for="oggetto_mail">Oggetto</label>
-                        </div>
-                        <div class="form-floating">
-                            <textarea class="form-control" id="message" placeholder="Lascia qui il tuo messaggio"
-                                name="messaggio" disabled></textarea>
-                            <label for="message">Lascia qui il tuo messaggio</label>
-                        </div>
-                        <div class="d-inline-block" id="send-button-container">
-                            <button type="button" id="send-button" disabled>INVIA</button>
-                        </div>
-                        <div class="d-inline-block" id="reset-button-container">
-                            <button type="button" id="reset-button" disabled>CANCELLA</button>
-                        </div>
-                    </form>
+                <form action="https://formspree.io/f/mzbnwnne" method="POST" class="mx-auto" id="contact-form">
+                    <div class="form-floating">
+                        <input class="form-control" type="email" id="sender" placeholder="E-mail" name="E-mail" required>
+                        <label for="sender">E-mail</label>
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control" type="text" id="oggetto_mail" placeholder="Oggetto" name="Oggetto" required>
+                        <label for="oggetto_mail">Oggetto</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" id="message"
+                            placeholder="Lascia qui il tuo messaggio" name="Messaggio" required></textarea>
+                        <label for="message">Lascia qui il tuo messaggio</label>
+                    </div>
+                    <div class="d-inline-block" id="send-button-container">
+                        <button type="submit" id="send-button">INVIA</button>
+                    </div>
+                    <div class="d-inline-block" id="reset-button-container">
+                        <button type="button" id="reset-button">CANCELLA</button>
+                    </div>
+                    <div class="my-3" id="status-form"></div>
+                </form>
                 <div class="col-lg-7 text-center mx-auto my-5" id="link">
-                    <p class="fs-5" id="linkedin">
-                        ⚠️⚠️⚠️
-                        <br>
-                        Al momento il form di contatto non è funzionante, ma potete sempre raggiungermi tramite
+                    <p class="fs-4" id="linkedin">
+                        In alternativa potete anche raggiungermi tramite
                         messaggio al mio profilo <a href="https://www.linkedin.com/in/alberto-defendi-6288b5270/"
                             class="text-decoration-none" target="_blank">LinkedIn</a>
                     </p>
@@ -293,6 +291,7 @@
                     </p> -->
                 </div>
             </div>
+        </div>
 
             <div class="spacing"></div>
 
