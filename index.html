@@ -28,7 +28,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Sans:wght@200&family=Montserrat:wght@100&display=swap&family=Inconsolata:wght@200;300;400&family=Roboto:wght@100;300;400&display=swap&family=Ubuntu+Mono&display=swap""
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Sans:wght@200&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Inconsolata:wght@200;300;400&family=Roboto:wght@100;300;400&display=swap&family=Ubuntu+Mono&display=swap""
         rel=" stylesheet">
 
     <!-- Favicon -->
@@ -78,22 +78,20 @@
         data-bs-smooth-scroll="true" class="container-sm scrollspy-example p-3 rounded-2 mx-auto" tabindex="0">
 
         <!-- about me -->
-        <div class="my-5">
-            <div class="row" id="about-me" data-aos="zoom-in">
-                <div class="col-lg-6 mx-auto">
-                    <h1 class="text-center my-3 d-block fw-bold text-shadow">
-                        Alberto Defendi
-                    </h1>
-                </div>
-                <div class="col-lg-12 my-3">
-                    <div class="propic mx-auto"></div> <!-- propic: custom class per mettere una foto profilo-->
-                </div>
-                <div class="col-lg-6 text-center mx-auto my-4">
-                    <p class="fs-4">Giovane software developer, appassionato di
-                        tutto ciò che appartiene alla cultura tech e pop (sì, sono un nerd).
-                        <br>Però davvero, mi piace un sacco programmare
-                    </p>
-                </div>
+        <div class="my-5 row" id="about-me" data-aos="zoom-in">
+            <div class="col-lg-6 mx-auto">
+                <h1 class="text-center my-3 d-block fw-bold text-shadow">
+                    Alberto Defendi
+                </h1>
+            </div>
+            <div class="col-lg-12 my-3">
+                <div class="propic mx-auto"></div> <!-- propic: custom class per mettere una foto profilo-->
+            </div>
+            <div class="col-lg-6 text-center mx-auto my-4">
+                <p class="fs-4">Giovane software developer, appassionato di
+                    tutto ciò che appartiene alla cultura tech e pop (sì, sono un nerd).
+                    <br>Però davvero, mi piace un sacco programmare
+                </p>
             </div>
         </div>
 
@@ -134,7 +132,8 @@
             <div class="col-lg-6 text-center mx-auto my-5 g-sm-5 align-self-center">
                 <h1 class="fw-bold text-shadow mb-5">Esperienze Lavorative</h1>
                 <ol class="list-group list-group-flush">
-                    <li class="list-group-item bg-transparent text-white fs-4">Software Developer SAP (PwC Italy, Treviso)
+                    <li class="list-group-item bg-transparent text-white fs-4">Software Developer SAP (PwC Italy,
+                        Treviso)
                     </li>
                     <li class="list-group-item bg-transparent text-white fs-4">
                         Autista consegnatario (Portogruaro)
@@ -144,7 +143,8 @@
                     <div class="fs-4">Da giugno 2023 ho iniziato la mia carriera da sviluppatore in PwC Italy, dove sto
                         toccando con mano realtà progettuali che, durante gli studi, non riuscivo a immaginare.
                         Nei progetti a cui prendo parte devo interfacciarmi con SAP e le sue tecnologie di
-                        programmazione e in particolar modo ho finora maturato esperienza nell'utilizzo di un tool per l'integrazione tra sistemi.
+                        programmazione e in particolar modo ho finora maturato esperienza nell'utilizzo di un tool per
+                        l'integrazione tra sistemi.
                         Quello che tuttora sto imparando di fondamentale ritengo sia però <div
                             class="text-contrast d-inline">lavorare in un team eterogeneo</div> e con competenze
                         differenti, con tutte le difficoltà che ciò comporta.
@@ -224,7 +224,8 @@
                         </div>
                     </li>
                     <li class="list-group-item bg-transparent text-white fs-4">
-                        <div class="text-contrast d-inline">Precisione</div><div class="d-inline">,</div>
+                        <div class="text-contrast d-inline">Precisione</div>
+                        <div class="d-inline">,</div>
                         <div class="text-contrast d-inline">puntualità</div>
                         <div class="d-inline">e</div>
                         <div class="text-contrast d-inline">determinazione</div>
@@ -254,23 +255,47 @@
         <!-- contatti -->
         <div class="row my-5">
             <div class="col-lg-7 text-center mx-auto" id="contatti">
-                <h1 class="fw-bold text-shadow mb-4">Contatti</h1>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-transparent text-white fs-4 my-1 no-border">
-                        <p>
-                            *&nbsp;Qua mi sarebbe piaciuto mettere dei bellissimi link alla mail e al numero di
-                            telefono,
-                            ma
-                            per questioni di sicurezza ovviamente non posso farlo. <br>Però potete sempre contattarmi
-                            tramite messaggio su LinkedIn&nbsp;*
-                        </p>
-                    </li>
-                    <li class="list-group-item bg-transparent text-white fs-4 my-1 no-border">
-                        <img src="assets/icons/linkedin-white.svg" width="36">
-                        <a href="https://www.linkedin.com/in/alberto-defendi-6288b5270/" class="text-decoration-none"
-                            target="_blank">LinkedIn</a>
-                    </li>
-                </ul>
+                <h1 class="fw-bold text-shadow mb-4">Contattami</h1>
+                <form action="https://formspree.io/f/mzbnwnne" method="POST" class="mx-auto" id="email-form">
+                    <div class="form-floating">
+                        <input class="form-control" type="email" id="sender" placeholder="E-mail" name="email">
+                        <label for="sender">E-mail</label>
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control" type="text" id="oggetto_mail" placeholder="Oggetto" name="oggetto">
+                        <label for="oggetto_mail">Oggetto</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" id="message"
+                            placeholder="Lascia qui il tuo messaggio" name="messaggio"></textarea>
+                        <label for="message">Lascia qui il tuo messaggio</label>
+                    </div>
+                    <div class="d-inline-block" id="send-button-container">
+                        <button type="button" id="send-button">INVIA</button>
+                    </div>
+                    <div class="d-inline-block" id="reset-button-container">
+                        <button type="button" id="reset-button">CANCELLA</button>
+                    </div>
+                </form>
+                <!-- <div class="col-lg-7 text-center mx-auto" id="link">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent text-white fs-4 my-1 no-border">
+                            <p>
+                                *&nbsp;Qua mi sarebbe piaciuto mettere dei bellissimi link alla mail e al numero di
+                                telefono,
+                                ma
+                                per questioni di sicurezza ovviamente non posso farlo. <br>Però potete sempre
+                                contattarmi
+                                tramite messaggio su LinkedIn&nbsp;*
+                            </p>
+                        </li>
+                        <li class="list-group-item bg-transparent text-white fs-4 my-1 no-border">
+                            <img src="assets/icons/linkedin-white.svg" width="36">
+                            <a href="https://www.linkedin.com/in/alberto-defendi-6288b5270/"
+                                class="text-decoration-none" target="_blank">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div> -->
             </div>
         </div>
 
@@ -288,20 +313,18 @@
 </body>
 
 <footer>
-    <div class="bg-transparent-layer">
-        <div class="row">
-            <div class="col-lg-4 mx-auto text-center">
-                <img class="p-3" src="assets/logo/logo.png" height="260">
-            </div>
-            <div class="col-lg-4 p-3 mx-auto text-center align-self-center">
-                <p>Crediti:</p>
-                <p>© 2023 Alberto Defendi</p>
-                <p>background image
-                    <a href="http://www.freepik.com" class="text-decoration-none" target="_blank">
-                        designed by Freepik
-                    </a>
-                </p>
-            </div>
+    <div class="row">
+        <div class="col-lg-4 mx-auto text-center">
+            <img class="p-3" src="assets/logo/logo.png" height="260">
+        </div>
+        <div class="col-lg-4 p-3 mx-auto text-center align-self-center">
+            <p>Crediti:</p>
+            <p>© 2023 Alberto Defendi</p>
+            <p>background image
+                <a href="http://www.freepik.com" class="text-decoration-none" target="_blank">
+                    designed by Freepik
+                </a>
+            </p>
         </div>
     </div>
 </footer>
