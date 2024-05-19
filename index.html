@@ -256,18 +256,18 @@
         <div class="row my-5">
             <div class="col-lg-7 text-center mx-auto" id="contatti">
                 <h1 class="fw-bold text-shadow mb-4">Contattami</h1>
-                <form class="mx-auto" id="email-form">
+                <form action="https://formspree.io/f/mzbnwnne" method="POST" class="mx-auto" id="email-form">
                     <div class="form-floating">
-                        <input class="form-control" type="email" id="sender" placeholder="E-mail">
+                        <input class="form-control" type="email" id="sender" placeholder="E-mail" name="email">
                         <label for="sender">E-mail</label>
                     </div>
                     <div class="form-floating">
-                        <input class="form-control" type="text" id="oggetto_mail" placeholder="Oggetoo">
+                        <input class="form-control" type="text" id="oggetto_mail" placeholder="Oggetto" name="oggetto">
                         <label for="oggetto_mail">Oggetto</label>
                     </div>
                     <div class="form-floating">
                         <textarea class="form-control" id="message"
-                            placeholder="Lascia qui il tuo messaggio"></textarea>
+                            placeholder="Lascia qui il tuo messaggio" name="messaggio"></textarea>
                         <label for="message">Lascia qui il tuo messaggio</label>
                     </div>
                     <div class="d-inline-block" id="send-button-container">

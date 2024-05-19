@@ -18,6 +18,9 @@ let sendFormButtonContainer = document.getElementById("send-button-container")
 let resetFormButton = document.getElementById("reset-button")
 let resetFormButtonContainer = document.getElementById("reset-button-container")
 
+sendFormButton.addEventListener("click", () => {
+    document.getElementById("email-form").reset();
+})
 resetFormButton.addEventListener("click", () => {
     document.getElementById("email-form").reset();
 })
