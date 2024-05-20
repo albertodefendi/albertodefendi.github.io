@@ -9,6 +9,7 @@ function switchHamburger() {
 
 
 
+//Funzione di invio email del form di contatto
 let form = document.getElementById("contact-form");
 async function handleSubmit(event) {
     event.preventDefault();
@@ -45,6 +46,7 @@ form.addEventListener("submit", handleSubmit);
 
 
 
+//Sezione di gestione eventi del form di contatto
 let sendFormButton = document.getElementById("send-button");
 let sendFormButtonContainer = document.getElementById("send-button-container");
 let resetFormButton = document.getElementById("reset-button");
@@ -54,30 +56,64 @@ resetFormButton.addEventListener("click", () => {
     document.getElementById("contact-form").reset();
 });
 
-sendFormButton.addEventListener("mouseover", () => {
-    sendFormButtonContainer.style.width = "69.5%";
-    sendFormButtonContainer.style.transitionDuration = "200ms";
-    resetFormButtonContainer.style.width = "29.5%";
-    resetFormButtonContainer.style.transitionDuration = "200ms";
-});
+if (!isTouchDevice())
+{
+    sendFormButton.addEventListener("mouseover", () => {
+        sendFormButtonContainer.style.width = "69%";
+        sendFormButtonContainer.style.transitionDuration = "200ms";
+        resetFormButtonContainer.style.width = "29%";
+        resetFormButtonContainer.style.transitionDuration = "200ms";
+    });
+    sendFormButton.addEventListener("focusin", () => {
+        sendFormButtonContainer.style.width = "69%";
+        sendFormButtonContainer.style.transitionDuration = "200ms";
+        resetFormButtonContainer.style.width = "29%";
+        resetFormButtonContainer.style.transitionDuration = "200ms";
+    });
 
-resetFormButton.addEventListener("mouseover", () => {
-    sendFormButtonContainer.style.width = "29.5%";
-    sendFormButtonContainer.style.transitionDuration = "200ms";
-    resetFormButtonContainer.style.width = "69.5%";
-    resetFormButtonContainer.style.transitionDuration = "200ms";
-});
+    resetFormButton.addEventListener("mouseover", () => {
+        sendFormButtonContainer.style.width = "29%";
+        sendFormButtonContainer.style.transitionDuration = "200ms";
+        resetFormButtonContainer.style.width = "69%";
+        resetFormButtonContainer.style.transitionDuration = "200ms";
+    });
+    resetFormButton.addEventListener("focusin", () => {
+        sendFormButtonContainer.style.width = "29%";
+        sendFormButtonContainer.style.transitionDuration = "200ms";
+        resetFormButtonContainer.style.width = "69%";
+        resetFormButtonContainer.style.transitionDuration = "200ms";
+    });
 
-sendFormButton.addEventListener("mouseleave", () => {
-    sendFormButtonContainer.style.width = "49.5%";
-    sendFormButtonContainer.style.transitionDuration = "200ms";
-    resetFormButtonContainer.style.width = "49.5%";
-    resetFormButtonContainer.style.transitionDuration = "200ms";
-});
+    sendFormButton.addEventListener("mouseout", () => {
+        sendFormButtonContainer.style.width = "49%";
+        sendFormButtonContainer.style.transitionDuration = "200ms";
+        resetFormButtonContainer.style.width = "49%";
+        resetFormButtonContainer.style.transitionDuration = "200ms";
+    });
+    sendFormButton.addEventListener("focusout", () => {
+        sendFormButtonContainer.style.width = "49%";
+        sendFormButtonContainer.style.transitionDuration = "200ms";
+        resetFormButtonContainer.style.width = "49%";
+        resetFormButtonContainer.style.transitionDuration = "200ms";
+    });
 
-resetFormButton.addEventListener("mouseleave", () => {
-    sendFormButtonContainer.style.width = "49.5%";
-    sendFormButtonContainer.style.transitionDuration = "200ms";
-    resetFormButtonContainer.style.width = "49.5%";
-    resetFormButtonContainer.style.transitionDuration = "200ms";
-});
+    resetFormButton.addEventListener("mouseout", () => {
+        sendFormButtonContainer.style.width = "49%";
+        sendFormButtonContainer.style.transitionDuration = "200ms";
+        resetFormButtonContainer.style.width = "49%";
+        resetFormButtonContainer.style.transitionDuration = "200ms";
+    });
+    resetFormButton.addEventListener("focusout", () => {
+        sendFormButtonContainer.style.width = "49%";
+        sendFormButtonContainer.style.transitionDuration = "200ms";
+        resetFormButtonContainer.style.width = "49%";
+        resetFormButtonContainer.style.transitionDuration = "200ms";
+    });
+}
+
+
+
+//Funzione di detect di un device touch
+function isTouchDevice() {
+    return window.matchMedia("(pointer: coarse)").matches;
+}
