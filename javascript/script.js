@@ -117,3 +117,17 @@ if (!isTouchDevice())
 function isTouchDevice() {
     return window.matchMedia("(pointer: coarse)").matches;
 }
+
+
+
+//Funzione di calcolo altezza navbar per centramento del div iniziale
+function adjustContainerHeight() {
+    var navbar = document.getElementById('navbar');
+    var container = document.getElementById('vertical-centered');
+    var navbarHeight = navbar.offsetHeight;
+    container.style.height = `calc(100vh - ${navbarHeight}px)`;
+    container.style.marginTop = `${navbarHeight}px`;
+}
+
+window.addEventListener('load', adjustContainerHeight);
+window.addEventListener('resize', adjustContainerHeight);
